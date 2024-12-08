@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Book Store</title>
+    <link rel="icon"
+        href="https://img.freepik.com/premium-photo/opened-book-with-flying-pages-butterflies-dark-backgroundgenerative-ai_841229-1656.jpg?semt=ais_hybrid">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            font-family: "Mulish", sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div
+    class="w-full md:h-screen h-96 bg-[url('https://img.pikbest.com/ai/illus_our/20230413/72b8c38d1230e4a15fbd427e3ca491c6.jpg!w700wp')] bg-no-repeat bg-cover">
+    <div class="w-full md:h-screen h-96" style="background-color: rgba(0, 0, 0, 0.559);">
+        <!-- Fixed Navbar -->
+        <nav class="fixed top-0 left-0 w-full p-5 bg-black flex justify-evenly items-center z-50">
+            <ul class="flex text-slate-50 justify-evenly w-full">
+                <a href="#bestsellers">
+                    <li class="text-xl hover:text-red-300 cursor-pointer">Best Sellers</li>
+                </a>
+                <a href="#featuredauthors">
+                    <li class="text-xl hover:text-red-300 cursor-pointer">Featured Authors</li>
+                </a>
+                <a href="#awardwinners">
+                    <li class="text-xl hover:text-red-300 cursor-pointer">Award Winners</li>
+                </a>
+                <a href="#requestbook">
+                    <li class="text-xl hover:text-red-300 cursor-pointer">Request a book</li>
+                </a>
+            </ul>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="flex justify-center items-center w-full flex-col md:pt-72 pt-32">
+            <h1 class="text-white md:text-9xl text-4xl hover:text-red-300">READ<span
+                    class="hover:text-red-800">ify...</span></h1>
+            <p class="text-white text-xl mt-4 text-center p-4">"A book is a dream that you hold in your hand." — Neil
+                Gaiman</p>
+        </div>
+    </div>
+</div>
+
+
+    <div id="bestsellers" class="w-full  flex justify-center items-center flex-col">
+        <h1 class="text-4xl font-bold mt-20 text-red-800">BEST SELLERS</h1>
+        <div class="md:mt-20 mt-20 md:px-40 md:grid grid-cols-3 w-full">
+            <div class="p-8 hover:shadow-lg hover:shadow-red-600">
+                <img src="https://books.google.co.in/books/publisher/content?id=pafTEAAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U3SBiF4-WfrlyGuyr_fOnKbB-L1Tw&w=1280"
+                    alt="" class="w-full h-52">
+                <h1 class="text-3xl text-center mt-2 font-bold">The Power of Now by Eckhart Tolle</h1>
+                <p class="text-center text-justify mt-4">The Power of Now teaches the importance of living in the
+                    present moment and letting go of the past regrets and future anxieties to achieve inner peace, self
+                    belief and spiritual awakening .</p>
+                <div class="mt-2">
+                    <button class="bg-lime-500 p-0.5">4.3 <i class="fa-solid fa-star"
+                            style="color: #ffffff;"></i></button><span class="text-xl">(5)</span>
+                </div>
+                <h3 class="mt-3"><i class="fa-solid fa-indian-rupee-sign" style="color: #f13b3b;"></i><span
+                        class="text-red-600">250</span>
+                    <i class="fa-solid fa-indian-rupee-sign ms-2"></i><span class="text-black line-through">300</span>
+                </h3>
+
+            </div>
+            <div class="p-8 hover:shadow-lg hover:shadow-red-600 mt-8 lg:mt-0">
+                <img src="https://m.media-amazon.com/images/I/81Dky+tD+pL._AC_UF1000,1000_QL80_.jpg" alt=""
+                    class="w-full h-52">
+                <h1 class="text-3xl text-center mt-2 font-bold">The Psychology of Money</h1>
+                <p class="text-center text-justify mt-4">The Psychology of Money explores how emotions, biases, and
+                    personal experiences shape our financial decisions, highlighting the importance of long-term
+                    thinking and financial humility.</p>
+                <div class="mt-2">
+                    <button class="bg-lime-500 p-0.5">4.6 <i class="fa-solid fa-star"
+                            style="color: #ffffff;"></i></button><span class="text-xl">(5)</span>
+                </div>
+                <h3 class="mt-3"><i class="fa-solid fa-indian-rupee-sign" style="color: #f13b3b;"></i><span
+                        class="text-red-600">290</span>
+                    <i class="fa-solid fa-indian-rupee-sign ms-2"></i><span class="text-black line-through">350</span>
+                </h3>
+
+            </div>
+            <div class="p-8 hover:shadow-lg hover:shadow-red-600 mt-8 lg:mt-0">
+                <img src="https://books.google.co.in/books/content?id=7alOQXMCx6cC&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U3eTkFMPdpJPtHyfipiCoR7urBHpA&w=1280"
+                    alt="" class="w-full h-52">
+                <h1 class="text-3xl text-center mt-2 font-bold">Goat Days by Benyamin</h1>
+                <p class="text-center text-justify mt-4">Goat Days is a poignant novel that explores the struggles and
+                    hardship of an Indian migrant worker in the Middle East, grappling with isolation, hardship, and the
+                    pursuit of freedom.</p>
+                <div class="mt-2">
+                    <button class="bg-lime-500 p-0.5">4.6 <i class="fa-solid fa-star"
+                            style="color: #ffffff;"></i></button><span class="text-xl">(5)</span>
+                </div>
+                <h3 class="mt-3"><i class="fa-solid fa-indian-rupee-sign" style="color: #f13b3b;"></i><span
+                        class="text-red-600">360</span>
+                    <i class="fa-solid fa-indian-rupee-sign ms-2"></i><span class="text-black line-through">450</span>
+                </h3>
+
+            </div>
+        </div>
+
+    </div>
+
+    <h1 id="featuredauthors" class="text-4xl italic text-red-800 font-bold text-center my-14">Featured Authors</h1>
+    <div class="w-full md:grid grid-cols-4 gap-x-4 px-2">
+        <div class="max-w-xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden shadow-lg shadow-red-600">
+            <div class="flex items-center p-6 ">
+                <img src="https://d2g9wbak88g7ch.cloudfront.net/authorimages/arundhatistory_647_100316054702.jpg"
+                    alt="Arundhati Roy" class="w-32 h-32 rounded-full mr-6">
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-800">Arundhati Roy</h2>
+                    <p class="text-gray-600 mt-2 text-justify">
+                        Arundhati Roy is an Indian author, best known for her Booker Prize-winning novel
+                        <span class="font-bold">The God of Small Things</span> (1997). Her work explores themes of
+                        politics, social justice, and history.
+                        Apart from fiction, she is also a passionate activist, writing extensively on issues like
+                        environmentalism, nuclear policy, and human rights.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="max-w-xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden shadow-lg shadow-red-600 mt-8 lg:mt-0">
+            <div class="flex items-center p-6">
+                <img src="https://d2g9wbak88g7ch.cloudfront.net/authorimages/download.jpg" alt="Arundhati Roy"
+                    class="w-32 h-32 rounded-full mr-6">
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-800">John Green</h2>
+                    <p class="text-gray-600 mt-2 text-justify">John Green is an American author known for his young
+                        adult novels, including The Fault in Our Stars and Looking for Alaska. His works often explore
+                        themes of love, loss, and self-discovery. Green is also a prominent YouTube creator and
+                        philanthropist, co-founding the channel VlogBrothers.
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden shadow-lg shadow-red-600 mt-8 lg:mt-0">
+            <div class="flex items-center p-6">
+                <img src="https://d2g9wbak88g7ch.cloudfront.net/authorimages/dr-shashi-tharoor-2.jpg"
+                    alt="Arundhati Roy" class="w-32 h-32 rounded-full mr-6">
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-800">Shashi Tharoor</h2>
+                    <p class="text-gray-600 mt-2 text-justify">
+                        Shashi Tharoor is an Indian politician, diplomat, and author. A former United Nations official,
+                        he has served as a Member of Parliament and is known for his eloquent speeches. Tharoor has
+                        written numerous books, including <span class="fw-bold">The Elephant, the Tiger, and the Cell
+                            Phone</span>, exploring India's politics, history, and culture.
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden shadow-lg shadow-red-600 mt-8 lg:mt-0">
+            <div class="flex items-center p-6">
+                <img src="  https://d2g9wbak88g7ch.cloudfront.net/authorimages/robin-sharma1.jpg
+          " alt="Arundhati Roy" class="w-32 h-32 rounded-full mr-6">
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-800">Robin Sharma</h2>
+                    <p class="text-gray-600 mt-2 text-justify">
+                        Robin Sharma is a Canadian author, speaker, and leadership expert, best known for his
+                        best-selling books <span class="fw-bold">The Monk Who Sold His Ferrari and The 5 AM Club</span>.
+                        His works focus on personal development, leadership, and productivity, inspiring individuals to
+                        achieve success through discipline, self-mastery, and positive habits.
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="awardwinners" class="w-full  flex justify-center items-center flex-col">
+        <h1 class="text-4xl font-bold mt-20 text-red-800">Award Winners</h1>
+        <div class="md:mt-20 mt-20 md:px-40 md:grid grid-cols-4 gap-x-4 w-full">
+            <div class="p-8 shadow-lg shadow-red-600">
+                <img src="https://www.bookswagon.com/productimages/images200/664/9780071781664.jpg" alt=""
+                    class="w-full h-52">
+                <h1 class="text-3xl text-center mt-2 font-bold">Strategic Value Investing</h1>
+                <div class="mt-2">
+                    <button class="bg-lime-500 p-0.5">4.3 <i class="fa-solid fa-star"
+                            style="color: #ffffff;"></i></button><span class="text-xl">(5)</span>
+                </div>
+                <h3 class="mt-3"><i class="fa-solid fa-indian-rupee-sign" style="color: #f13b3b;"></i><span
+                        class="text-red-600">1460</span>
+                    <i class="fa-solid fa-indian-rupee-sign ms-2"></i><span class="text-black line-through">2007</span>
+                </h3>
+
+            </div>
+            <div class="p-8 shadow-lg shadow-red-600">
+                <img src="https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/224/9789362617224.jpg" alt=""
+                    class="w-full h-52">
+                <h1 class="text-3xl text-center mt-2 font-bold">Head and the Heart</h1>
+                <div class="mt-2">
+                    <button class="bg-lime-500 p-0.5">4.6 <i class="fa-solid fa-star"
+                            style="color: #ffffff;"></i></button><span class="text-xl">(5)</span>
+                </div>
+                <h3 class="mt-3"><i class="fa-solid fa-indian-rupee-sign" style="color: #f13b3b;"></i><span
+                        class="text-red-600">549</span>
+                    <i class="fa-solid fa-indian-rupee-sign ms-2"></i><span class="text-black line-through">1193</span>
+                </h3>
+
+            </div>
+            <div class="p-8 shadow-lg shadow-red-600">
+                <img src="https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/501/9781529423501.jpg" alt=""
+                    class="w-full h-52">
+                <h1 class="text-3xl text-center mt-2 font-bold">The Daughter of Auschwitz</h1>
+                <div class="mt-2">
+                    <button class="bg-lime-500 p-0.5">4.6 <i class="fa-solid fa-star"
+                            style="color: #ffffff;"></i></button><span class="text-xl">(5)</span>
+                </div>
+                <h3 class="mt-3"><i class="fa-solid fa-indian-rupee-sign" style="color: #f13b3b;"></i><span
+                        class="text-red-600">466</span>
+                    <i class="fa-solid fa-indian-rupee-sign ms-2"></i><span class="text-black line-through">1084</span>
+                </h3>
+
+            </div>
+
+            <div class="p-8 shadow-lg shadow-red-600">
+                <img src="https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/055/9781409156055.jpg" alt=""
+                    class="w-full h-52">
+                <h1 class="text-3xl text-center mt-2 font-bold">The Lincoln Lawyer</h1>
+                <div class="mt-2">
+                    <button class="bg-lime-500 p-0.5">4.6 <i class="fa-solid fa-star"
+                            style="color: #ffffff;"></i></button><span class="text-xl">(5)</span>
+                </div>
+                <h3 class="mt-3"><i class="fa-solid fa-indian-rupee-sign" style="color: #f13b3b;"></i><span
+                        class="text-red-600">477</span>
+                    <i class="fa-solid fa-indian-rupee-sign ms-2"></i><span class="text-black line-through">1089</span>
+                </h3>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div id="requestbook" class="bg-gray-50 min-h-screen flex items-center justify-center py-6 px-4 sm:px-6 lg:px-8">
+        <div class="w-full max-w-md lg:max-w-4xl bg-white shadow-lg rounded-lg p-6 hover:shadow-lg hover:shadow-red-600">
+            <h2 class="text-4xl font-bold text-red-800 text-center mb-10">Request A Book</h2>
+            <form class="space-y-4 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-6">
+                <div>
+                    <label for="isbn" class="block text-lg font-medium text-gray-700">ISBN13</label>
+                    <input type="text" id="isbn" placeholder="Enter ISBN"
+                        class="mt-1 block w-full h-12 rounded-md shadow-md border-none focus:border-blue-500 focus:ring-blue-500 sm:text-sm" />
+                </div>
+                <div>
+                    <label for="title" class="block text-lg font-medium text-gray-700">Book Title</label>
+                    <input type="text" id="title" placeholder="Enter Book Title"
+                        class="mt-1 block w-full h-12 rounded-md shadow-md border-none focus:border-blue-500 focus:ring-blue-500 sm:text-sm" />
+                </div>
+                <div>
+                    <label for="author" class="block text-lg font-medium text-gray-700">Author</label>
+                    <input type="text" id="author" placeholder="Enter Author Name"
+                        class="mt-1 block w-full h-12 rounded-md shadow-md border-none focus:border-blue-500 focus:ring-blue-500 sm:text-sm" />
+                </div>
+                <div>
+                    <label for="quantity" class="block text-lg font-medium text-gray-700">Quantity</label>
+                    <input type="number" id="quantity" value="1" min="1"
+                        class="mt-1 block w-full h-12 rounded-md shadow-md border-none focus:border-blue-500 focus:ring-blue-500 sm:text-sm" />
+                </div>
+                <div class="lg:col-span-1">
+                    <label for="email" class="block text-lg font-medium text-gray-700">Email ID</label>
+                    <input type="email" id="email" placeholder="Enter Email ID"
+                        class="mt-1 block w-full h-12 rounded-md shadow-md border-none focus:border-blue-500 focus:ring-blue-500 sm:text-sm" />
+                </div>
+                <div class="lg:col-span-1">
+                    <label for="phone" class="block text-lg font-medium text-gray-700">Phone/Mobile</label>
+                    <input type="tel" id="phone" placeholder="Enter Phone Number"
+                        class="mt-1 block w-full h-12 rounded-md shadow-md border-none focus:border-blue-500 focus:ring-blue-500 sm:text-sm" />
+                </div>
+                <div class="lg:col-span-2 flex items-center justify-between">
+                    <button type="button" class="bg-blue-400 text-white font-medium py-2 px-4 rounded">Verify
+                        Email</button>
+                    <button type="submit" class="bg-green-400 text-white font-medium py-2 px-4 rounded">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <div class="w-full bg-black md:h-16 h-24 p-4">
+
+        <div class="md:grid grid-cols-2">
+            <div>
+                <p class="text-center text-white md:ml-32 ">©️ Copyright,All rights reserved | Designed by READify</p>
+
+            </div>
+
+            <div class="flex flex-row md:place-content-end place-content-center text-white">
+                <div class="icon items px-5">
+                    <a href="" target="_blank"> <i class="fa-brands fa-facebook md:fa-2xl fa-lg"></i></a>
+                </div>
+                <div class="icon items px-5">
+                    <a href="" target="_blank"> <i class="fa-brands fa-youtube md:fa-2xl fa-lg"></i></a>
+                </div>
+                <div class="icon px-5">
+                    <a href="" target="_blank"> <i class="fa-brands fa-x-twitter md:fa-2xl  fa-lg"></i></a>
+                </div>
+                <div class="icon px-5">
+                    <a href="" target="_blank"> <i class="fa-brands fa-instagram md:fa-2xl fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+
+
+    </div>
+</body>
+
+</html>
